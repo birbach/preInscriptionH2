@@ -1,0 +1,985 @@
+<div *ngIf="sliders==1">
+    <div class="title">
+        <h1>Pré-Inscription - OPI Apogee</h1>
+    </div>
+    <div style="margin:  0px 230px 0px 230px;">
+        <table class="table">
+            <thead>
+                <tr class="cols">
+                    <th>Pré-Inscription - choisir établissement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        <span style="color: #7a5fff;">L'Université Hassan I de Casablanca informe tous les bacheliers
+                            2021
+                            et 2022 que
+                            la preinscription dens ses etablissements passe exclusivement a travers sa
+                            plateforne ; </span>https://preins.univh2c.ma
+                        <span style="color: #7a5fff;">Afin de preserver leurs donees personnelies contre toute
+                            utilisation
+                            frauduleuse,
+                            les étudiants Sont invités à renseigner le formulaire eux meme sans passer par un
+                            intermédiaire quelconque (Page Facebook. Whatsapp...)</span>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action disabled">
+                Veuillez choisir l'établissement auquel vous allez faire la pré-inscription.
+            </a>
+            <a class="list-group-item list-group-item-action" (click)="etablisementSelected()">Dapibus ac facilisis
+                in</a>
+            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="sliders==2" class="centerSlider">
+    <div class="title">
+        <h1>Pré-Inscription - OPI Apogee
+            <br>
+            Faculté des Sciencs Juridiques , Economiques et Sociales Ain Chock - FSJESC
+        </h1>
+    </div>
+    <div class="centerTables">
+        <table class="table">
+            <thead>
+                <tr class="cols">
+                    <th>Pré-Inscription Etape 1/6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        Veuillez saisir le code Massar pour les éleves bacheliers de 2022, 2021.
+                        Pour les élèves ayant un bac mission, saisir le CIN.
+                        Pour les éleves figurant sur les listes principles/d'attente, salsir l'identifiant affiché sur
+                        la liste
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table tableBg">
+            <thead>
+                <tr>
+                    <th scope="row">CNE/Code Massar/Identifiant</th>
+                    <!-- <th><input type="text"></th> -->
+                    <th scope="row"><input type="text"></th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                    </th>
+
+                    <th scope="row">
+                        <input type="checkbox" /> J'ai lu et j'accepte la mention relative à la protection des données à
+                        catactére presonnelle
+                    </th>
+                </tr>
+
+                <tr>
+                    <th scope="row" style="text-align: left;">
+                        <button type="button" (click)="precedentButton()">
+                            << Précedent </button>
+                    </th>
+
+                    <th scope="row" style="text-align: right;">
+                        <button type="button" (click)="suivantButton()"> Suivant >></button>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <p class="centerText">
+        <span style="color: #7a5fff; font-weight: bold; "> L'Universilé Hassan II de Casablanca informe tous les
+            bacheliers 2021 et 2022
+            que la préinscripion dans
+            ses établis sements passp exclusivement à travers Ba plateforme : https://preins.univh2c.ma
+            fin de preserver leurs donnees personnelles contre toute utilisation fraudu/cus@, les etudiants sont
+            invitès à renseioner le formulaire eux mème sans passer par un intermediaire quelconque (Page
+            Facebook, Whatsapp…..)</span> C'est quo le code Massar?
+        Le code Massar est le code cui se trouve sur le diplôme de baccalaréat,<span
+            style="color: #7a5fff; font-weight: bold;">par exemple
+            M101010101. </span>
+    </p>
+
+    <div class="card">
+        <div class="card-body">
+            Par le bias de ce formulaire en ligne, l'Universite Hassan il de Casablanca collecte yos données
+            porsonnolles on vue de la l'accomplissomont de votro inscription à l'Universito Hassan il do Casablanca.
+            Ce traitement a fait l'objet d'une autorisation auprès de la CNDP sous le numèro
+            Les connées personnelles collectées peuvent étre transmises à ONOU SC, Bard Bank, AMO, Assurance,
+            Transport urban et tout destinatairo habilito dans lo cadro cotto finalito
+            VouS poLveR vOuS adresser à <span style="color: #7a5fff;">presidence@univh2c.ma</span> pour exercer vOs
+            droits d'accès, de recification
+            • C'oppos/dion au traitement de vos donnees personnelles conformement aux dispositions de la lol 09
+            00.
+        </div>
+    </div>
+</div>
+<div *ngIf="sliders==3">
+    <div class="title">
+        <h1>Pré-Inscription - OPI Apogee
+            <br>
+            Faculté des Sciencs Juridiques , Economiques et Sociales Ain Chock - FSJESC
+        </h1>
+    </div>
+
+    <div class="centerTables">
+        <table class="table">
+            <thead>
+                <tr class="cols">
+                    <th>Pré-Inscription Etape 2/6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="centerText">
+                    <th scope="row ">
+                        Pré-Inscription pour l'établissement
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table tableBg">
+            <thead>
+                <tr>
+                    <th scope="row">Etablissement</th>
+                    <!-- <th><input type="text"></th> -->
+                    <th scope="row">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+
+                <tr>
+                    <th scope="row" style="text-align: left;">
+                        <button type="button" (click)="precedentButton()">
+                            << Précedent </button>
+                    </th>
+
+                    <th scope="row" style="text-align: right;">
+                        <button type="button" (click)="suivantButton()"> Suivant >></button>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div *ngIf="sliders==4">
+    <div class="title">
+        <h1>Pré-Inscription - OPI Apogee
+            <br>
+            Faculté des Sciencs Juridiques , Economiques et Sociales Ain Chock - FSJESC
+        </h1>
+    </div>
+
+    <div class="centerTables">
+        <table class="table">
+            <thead>
+                <tr class="cols">
+                    <th>Pré-Inscription Etape 3/6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="centerText">
+                        Veuillez séléctionner la filére de votre choix
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table tableBg">
+            <thead>
+                <tr>
+                    <th scope="row">Filiére</th>
+                    <!-- <th><input type="text"></th> -->
+                    <th scope="row" class="centerText">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+
+                <tr>
+                    <th scope="row" style="text-align: left;">
+                        <button type="button" (click)="precedentButton()">
+                            << Précedent </button>
+                    </th>
+
+                    <th scope="row" style="text-align: right;">
+                        <button type="button" (click)="suivantButton()"> Suivant >></button>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div *ngIf="sliders==5">
+    <div class="title">
+        <h1>Pré-Inscription - OPI Apogee
+            <br>
+            Faculté des Sciencs Juridiques , Economiques et Sociales Ain Chock - FSJESC
+        </h1>
+    </div>
+    <!-- <div>
+        <h2>Informations personnelles</h2>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <p class="cols">Pré-Inscription Etape 4/6</p>
+        </div>
+        <div class="row">
+            <p class="secondaryTitle">Informations personnelles</p>
+        </div>
+        <div class="row">
+            NOM :
+            <br>
+            CNE/Code Masser :
+        </div>
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Nom</label>
+                    <input type="text" class="form-control" placeholder="Nom">
+                    <label for="exampleInputEmail1">Prénom</label>
+                    <input type="email" class="form-control" placeholder="Prenom">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group ar-info">
+                    <label>الاسم الشخصي</label>
+                    <input type="text" class="form-control" placeholder="الاسم الشخصي">
+                    <label for="exampleInputEmail1">الاسم العائلي</label>
+                    <input type="email" class="form-control" placeholder="الاسم العائلي">
+                </div>
+            </div>
+        </div>
+        <div class="vrBar"></div>
+
+        <div class="col ">
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>CIN</label>
+                        <input type="text" class="form-control" placeholder="CIN">
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>SEX</label>
+                        <select class="form-select">
+                            <option selected>Open this select menu</option>
+                            <option value="masculin">Masculin</option>
+                            <option value="feminin">Féminin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Date de naissance</label>
+                        <input type="date" class="form-control" placeholder="Date">
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>ville de naissance</label>
+                        <input type="text" class="form-control" placeholder="ville de naissance">
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="form-group ar-info">
+                        <label>مكان الازدياد</label>
+                        <input type="text" class="form-control" placeholder="مكان الازدياد">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Pays de nationalité</label>
+                        <select class="form-select">
+                            <option selected>Open this select menu</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label">Adresse</label>
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Code Postal</label>
+                        <input type="text" class="form-control" placeholder="Code Postal">
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>N° Téléphone</label>
+                        <input type="text" class="form-control" placeholder="N° Téléphone">
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+
+
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Moyen de transport</label>
+                        <input type="text" class="form-control" placeholder="Moyen de transport">
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label">Handicape</label>
+                        <select class="form-select">
+                            <option selected>Open this select menu</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+
+            <div class="row rowColor">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Activités sportives</label>
+                        <input type="text" class="form-control" placeholder="Activités sportives">
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="secondaryTitle">Informations de Bac</p>
+        </div>
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Année d'obtention de bac</label>
+                    <select class="form-select" formControlName="anneeBac">
+                        <option selected>Open this select menu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Serie du Bac</label>
+                    <select class="form-select" formControlName="serieBac">
+                        <option selected>Open this select menu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Mention</label>
+                    <select class="form-select" formControlName="mention">
+                        <option selected>Open this select menu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Lycée d'obtention du bac</label>
+                    <input type="text" class="form-control" placeholder="Lycée d'obtention du bac"
+                        formControlName="lyceeBac">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Province du Bac</label>
+                    <input type="text" class="form-control" placeholder="Province du Bac" formControlName="provinceBac">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <p class="secondaryTitle">informations vaccin Covid-19</p>
+        </div>
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Type de vaccin</label>
+                    <select class="form-select" formControlName="typeVaccin">
+                        <option selected>Open this select menu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Nombre de doses</label>
+                    <select class="form-select" formControlName="nombreDoses">
+                        <option selected>Open this select menu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Date de premiére dose</label>
+                    <input type="date" class="form-control" placeholder="Date de premiére dose"
+                        formControlName="datePremiereDose">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Date de deuxiéme dose</label>
+                    <input type="date" class="form-control" placeholder="Date de deuxiéme dose"
+                        formControlName="dateDeuximeDose">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+        <br>
+        <div class="row">
+            <div style="text-align: left;" class="col">
+                <button type="button" (click)="precedentButton()">
+                    << Précedent </button>
+            </div>
+
+            <div style="text-align: right;" class="col">
+                <button type="button" (click)="suivantButton()"> Suivant >></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="sliders==6">
+    <div class="title">
+        <h1>Pré-Inscription - OPI Apogee
+            <br>
+            Faculté des Sciencs Juridiques , Economiques et Sociales Ain Chock - FSJESC
+        </h1>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <p class="cols">Informations pour AMO (Assurance maladie obligatoir) Etape 5/6</p>
+        </div>
+        <div class="row rowAmoColor">
+            <p> Informations pour AMO (Assurance maladie obligatoir) </p>
+        </div>
+        <div class="row rowColor">
+            <p class="secondaryTitle">Situation familiale</p>
+        </div>
+        <div class="row rowColor">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="situationFamiliale">
+                <label class="form-check-label">
+                    Célibataire
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="situationFamiliale">
+                <label class="form-check-label">
+                    Marié(e)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="situationFamiliale">
+                <label class="form-check-label">
+                    Divorcé(e)
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="situationFamiliale">
+                <label class="form-check-label">
+                    Veuf(ve)
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row rowColor">
+            <p class="secondaryTitle">Informations bancaires</p>
+        </div>
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>j'ai mon RIB :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="rib" formControlName="rib">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="rib" formControlName="rib">
+                    <label>Non</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Relevé d'indentité bancaire.</label>
+                    <input type="text" class="form-control" placeholder="Relevé d'indentité bancaire"
+                        formControlName="releveBancaire">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Mon numéro RIB</label>
+                    <input type="text" class="form-control" placeholder="Mon numéro RIB" formControlName="numRib">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row rowColor">
+            <p class="secondaryTitle">Informations sur pére</p>
+        </div>
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>j'ai CIN pére :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="dejaCinPere" formControlName="dejaCinPere">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="dejaCinPere" formControlName="dejaCinPere">
+                    <label>Non</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Numéro CIN pére</label>
+                    <input type="text" class="form-control" placeholder="Numéro CIN pére" formControlName="numCinPere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Nom du pére </label>
+                    <input type="text" class="form-control" placeholder="Nom du pére" formControlName="nomPere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Prénom du pére </label>
+                    <input type="text" class="form-control" placeholder="Prénom du pére" formControlName="prenomPere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Date de naissance du pére </label>
+                    <input type="text" class="form-control" placeholder="Date de naissance du pére"
+                        formControlName="dateNaissancePere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Pére en vie :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="viePere" formControlName="viePere">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="viePere" formControlName="viePere">
+                    <label>Non</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row rowColor">
+            <p class="secondaryTitle">Informations sur mére</p>
+        </div>
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>j'ai CIN Mére :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="dejaCinMere" name="cin" formControlName="dejaCinMere">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="dejaCinMere" name="cin" formControlName="dejaCinMere">
+                    <label>Non</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Numéro CIN Mére</label>
+                    <input type="text" class="form-control" placeholder="Numéro CIN Mére" formControlName="numCinMere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Nom du Mére </label>
+                    <input type="text" class="form-control" placeholder="Nom du Mére" formControlName="nomMere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Prénom du Mére </label>
+                    <input type="text" class="form-control" placeholder="Prénom du Mére" formControlName="prenomMere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Date de naissance du Mére </label>
+                    <input type="text" class="form-control" placeholder="Date de naissance du Mére"
+                        formControlName="dateNaissanceMere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Mére en vie :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="mereVie" formControlName="mereVie">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="mereVie" formControlName="mereVie">
+                    <label>Non</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row rowColor">
+            <p class="secondaryTitle">Informations couverture social (si vous etre inscrit à l'AMO-E l'annés derniére,
+                choise non) :</p>
+        </div>
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>J'ai déjà une converture :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="dejaConverture" formControlName="dejaConverture">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="dejaConverture" formControlName="dejaConverture">
+                    <label>Non</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="dejaConverture" formControlName="dejaConverture">
+                    <label>Inscrit et l'immatriculation à l'AMO-E</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Nom du Converture </label>
+                    <select class="form-select" formControlName="nomConverture">
+                        <option selected>Open this select menu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+        <br>
+        <div class="row">
+            <div style="text-align: left;" class="col">
+                <button type="button" (click)="precedentButton()">
+                    << Précedent </button>
+            </div>
+            <div style="text-align: right;" class="col">
+                <button type="button" (click)="suivantButton()"> Suivant >></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="sliders==7">
+    <div class="container">
+        <div class="row ">
+            <p class="cols">Modifier votre photo: Etape 5/6</p>
+        </div>
+        <div class="row rowColor">
+            <div class="col">
+
+                Rappel: <br>
+                C'est la photo qui sera utiliee Bur votre carte d'etudiant, alora veuiliez mettre une photo comme la
+                photo sur le pa seport ou la carte d'identita nationale.
+                les condition sure la photo:
+                <ul style="color:#7a5fff;">
+                    <li>Polde: Ne dolt paa dépasser 1 Mo</li>
+                    <li>Formate: photo 'identification comme cell de la carte national, ou pageport, comme explique Icl
+                    </li>
+                    <li>Types : photo (JPG, JPEG)</li>
+                    <li> Les dessins, photos d'artiste, photos avec des enfants, photos de personnalites ou photos
+                        vulgaires seront refugées</li>
+                </ul>
+
+                prise de la photo:
+
+                Comme clè ci dessus, I taut Que les photos solent portal: commes les prolos du passepo. ci dessus lès
+                pré-requis de la prise de a proto :
+                <ul style="color: #7a5fff;">
+                    <li> Arriéere-plan: une Boule Cod pure claire, de proforence blanc.</li>
+                    <li>Position: position de face, il ne taut pas quo le sujot point incline ver uns direction (haut,
+                        bas.
+                        drolls, gauche).</li>
+                    <li>Lunette, les lunettes ne dolvent pas cache lee yaux, at pure refit ne dolt pas apparaitre aur la
+                        photo</li>
+                    <li>Cheveux, Il ne faut pas que les cheveux cachant une partie du visage.</li>
+                </ul>
+            </div>
+            <input type="file" style="text-align: right;">
+        </div>
+        <br><br><br>
+        <div class="row rowColor">
+            <span style="color: red;"> Si a photo respecte lap corditong( comme la plolo de la Cit, paasport.
+                ViSa), in eat pay necegaalre de retalecharger a photo</span>
+            <span style="color: #7a5fff;"> INB: lee studiante qui nont pad telochargo laur photo, ou blen qui ont
+                telecharge une photo qui n'a pas respecte les conditions saront prie en
+                photo lore de l'inacription, du dan apporter la photo res pactant les méme condition sur un CD.</span>
+        </div>
+    </div>
+    <div class="row">
+        <div style="text-align: left;" class="col">
+            <button type="button" (click)="precedentButton()">
+                << Précedent </button>
+        </div>
+        <div style="text-align: right;" class="col">
+            <button type="button" (click)="suivantButton()"> Suivant >></button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="sliders==8">
+    <div class="title">
+        <h1>Pré-Inscription - OPI Apogee
+            <br>
+            Faculté des Sciencs Juridiques , Economiques et Sociales Ain Chock - FSJESC
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <p class="cols">Pré-Inscription: Etape 6/6</p>
+        </div>
+        <div class="row">
+            <p class="secondaryTitle">Choisir le jour de rendez-vous déposer le dossier </p>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                Rendez-vous actuel
+            </div>
+            <div class="col">
+                jour : <input type="number">
+            </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                Enregistré
+            </div>
+            <div class="col">
+                Séance : <input type="text">
+            </div>
+        </div>
+        <div class="row rowColor">
+            <div class="col">
+                Jours disponibles
+            </div>
+            <div class="col">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                Nombre maximun de chnagement du rendez-vous
+            </div>
+            <div class="col">
+                Unde fois le rendez-vous choisir et enregistré, vous n'allez plue pouvoire le changer
+            </div>
+        </div>
+
+        <div class="row rowColor">
+            <div class="col">
+                Nombre restant de changement du rendez-vous
+            </div>
+            <div class="col">
+                1
+            </div>
+        </div>
+
+        <br> <br>
+        <div class="row rowColor">
+            <div class="col">
+                <button>
+                    << Annuler Modification</button>
+            </div>
+            <div class="col">
+                <span style="color:red"> Veuillez choisir attentivement le rendez-vous pour déposer le dossier, vous
+                    n'allez
+                    pas pouvoir le changer
+                    par la suite.</span>
+                <br>
+                <span style="color:#7a5fff"> Veuillez vous présenter une heure avant l'heure de l'inscription .</span>
+            </div>
+            <div class="col">
+                <button>Choisir Séance >></button>
+            </div>
+        </div>
+        <br> <br> <br>
+
+        <div class="row rowColor">
+            <div class="col">
+                Une fois vous avez pris le rendez-vous vous pouvez imprimer la fiche d'inscription .
+                <br>
+                <span style="color: red;"> Veullez vous présenter à l'heure précise de rendez-vous muni des documents
+                    demandés.</span>
+            </div>
+
+            <div class="col">
+                <button>Imprimer fichie d'inscription >></button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
